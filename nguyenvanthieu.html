@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thành viên 2</title>
-    <link rel="stylesheet" href="style.css"> <!-- Liên kết tới file CSS -->
+    <link rel="stylesheet" href="thieu.css"> <!-- Liên kết tới file CSS -->
 </head>
 <body>
     <!-- Thanh Menu -->
     <div class="taskbar">
-        <li><a href="index.html">Trang chính</a></li>
+        
         <ul>
-            
+            <li><a href="index.html">Trang chính</a></li>
             <li><a href="nguyenhuudat.html">Nguyễn Hữu Đạt</a></li>
             <li><a href="tranphatdat.html">Trần Phát Đạt</a></li>
             <li><a href="lethanhtung.html">Lê Thanh Tùng</a></li>
@@ -22,13 +22,105 @@
 
     <!-- Thông tin thành viên -->
     <div class="container">
-        <div class="profile-image">
-            <img src="images/image2.png" alt="Thành viên 2" />
+        <!-- Cột bên trái -->
+        <div class="left-column">
+            <header>
+                <img src="images/thieu.jpg" alt="Ảnh cá nhân" class="profile-img">
+                <h1>Nguyễn Văn Thiều</h1>
+                <p>Sinh viên năm 4 - Đại học Công Nghệ TP.Hồ Chí Minh</p>
+            </header>
+
+            <section class="info">
+                <h2>Thông Tin Cá Nhân</h2>
+                <ul>
+                    <li><strong>Email:</strong> thieu080103@gmail.com</li>
+                    <li><strong>Điện thoại:</strong> 0363447701</li>
+                    <li><strong>Địa chỉ:</strong>  Quận 9, TP.HCM</li>
+                </ul>
+            </section>
+
+            <section class="skills">
+                <h2>Kỹ Năng</h2>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Java ,C#,C/C++,PHP</li>
+                    <li>Kĩ năng giao tiếp và làm việc nhóm</li>
+                    <li>Kĩ năng tư duy sáng tạo và quản lý thời gian</li>
+                </ul>
+            </section>
         </div>
-        <h1>Thành viên 2</h1>
-        <div class="thongtin"><b>Tên:</b> <i>Thành viên 2</i></div>
-        <div class="thongtin"><b>Ngày sinh:</b> <i>1995</i></div>
-        <div class="thongtin"><b>Điện thoại:</b> <i>0375520739</i></div>
+
+        <!-- Cột bên phải -->
+        <div class="right-column">
+            <section class="education">
+                <h2>Học Vấn</h2>
+                <ul>
+                    <li>
+                        <strong>Đại học Công Nghệ TP.Hồ Chí Minh</strong>
+                        <p>Chuyên ngành: Công nghệ Thông tin</p>
+                        <p>Thời gian: 09/2021 - 08/2025</p>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section class="projects">
+                <h2>Dự Án 1</h2>
+                <ul>
+                    <li>
+                        <strong>Website Bán Balo (04/03/2024 - 03/06/2024)</strong>
+                        <p>Mô tả: Xây dựng website quản lý điểm và lịch học cho sinh viên.</p>
+                        <p>https://github.com/NguyenThieu81/QLBanBaLo.git
+                            Sử dụng công nghệ :Springboot , MySQL
+                            Mô tả: 
+                            Chức Năng đăng ký, đăng nhập tài khoản
+                            Đăng nhập website bằng Google
+                            Phân quyền tài khoản
+                            Quản lý thêm, xóa, sửa sản phẩm
+                            Quản Lý database bằng MySQL</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="projects">
+                <h2>Dự Án 2</h2>
+                <ul>
+                    <li>
+                        <strong>WebsiteQuản Lý Thư Viện Offline (04/09/2024 - 15/12/2024)</strong>
+                        <p>Mô tả: Xây dựng website quản lý thư viện</p>
+                        <p>https://github.com/NguyenThieu81/QLThuVien.git
+                            Sử dụng công nghệ :Springboot , MySQL
+                            Mô tả: 
+                            Chức Năng đăng ký, đăng nhập tài khoản
+                            Đăng nhập website bằng Google
+                            Quản lý lịch hẹn
+                            Quản lý thêm, xóa, sửa sách
+                            Đặt lịch hẹn
+                            Thông báo
+                            Quản Lý database bằng MySQL</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="projects">
+                <h2>Dự Án 3</h2>
+                <ul>
+                    <li>
+                        <strong>App tìm bạn đồng hành du lịch (04/11/2024 - 08/01/2025)</strong>
+                        <p>Mô tả: Xây dựng App tìm bạn đồng hành du lịch.</p>
+                        <p>https://github.com/NguyenThieu81/buddy_travel2.git
+                            Sử dụng công nghệ :Flutter
+                            Mô tả: 
+                            Chức Năng đăng ký, đăng nhập tài khoản
+                            Đăng nhập website bằng Google
+                            Quản lý thêm, xóa, sửa chuyến đi
+                            chat giữa các người dùng
+                            Thời tiết của thành phố muốn tới
+                            Chỉnh sửa thông tin người dùng
+                            Đăng bài viết
+                            Quản Lý database bằng Firebase</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </div>
 </body>
 </html>
