@@ -1,0 +1,120 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Thanh Menu */
+.taskbar {
+    background: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.taskbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.taskbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.taskbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.taskbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Thông tin thành viên */
+.container {
+    background: white;
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid #333;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.thongtin {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* CV Content */
+.cv {
+    background: white;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv h2 {
+    font-size: 22px;
+    color: #444;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.cv p, .cv ul, .cv ol {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.cv ul {
+    list-style: none;
+}
+
+.cv ul li::before {
+    content: "✔ ";
+    color: green;
+    font-weight: bold;
+}
+
+.cv ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container, .cv {
+        width: 90%;
+    }
+    
+    .taskbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
