@@ -194,7 +194,14 @@ h1 {
     margin-bottom: 10px; /* Thêm khoảng cách giữa các mục trong danh sách */
 }
 
+.information {
+    text-align: left; /* Căn lề trái cho tất cả nội dung trong information */
+    padding-left: 20px; /* Thêm khoảng cách bên trái cho đẹp */
+}
 
+.information h2, .information h4 {
+    margin-left: 0; /* Đảm bảo tiêu đề không bị lệch */
+}
 
 
 

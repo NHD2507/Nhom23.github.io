@@ -17,6 +17,15 @@
                 margin-bottom: 10px; /* Khoảng cách dưới ảnh */
                 margin-top: 0px; /* Khoảng cách phía trên ảnh để nhích xuống một chút */
             }
+            .QR-code {
+                width: 80px; /* Kích thước ảnh QR Code */
+                height: 80px; /* Kích thước ảnh QR Code */
+                margin-top: 15px; /* Khoảng cách phía trên ảnh */
+                margin-bottom: 20px; /* Khoảng cách phía dưới ảnh */
+                display: block; /* Đảm bảo ảnh hiển thị như một phần tử khối */
+                margin-left: auto; /* Căn giữa ảnh */
+                margin-right: auto; /* Căn giữa ảnh */
+            }
             .divider {
                 border-right: 1px solid #ddd;
             }
@@ -52,13 +61,16 @@
             <div class="col-md-4 text-center divider">
                 <img src="images/myavt.png" class="img-fluid rounded-circle mb-3 profile-img" alt="Trần Phát Đạt">
                 <h1>Trần Phát Đạt</h1>
-                <h5><i class="fas fa-info-circle"></i> Thông tin</h5>
-                <div><b>Ngày sinh:</b> <i>30/10/2003</i></div>
-                <div><b>Điện thoại:</b> <i>0867431942</i></div>
-                <div><b>Email:</b> <i>your.email@example.com</i></div>
-                <br>
+                <h5>Interm Game Developer</h5>
+
+                <div class="information mt-4">
+                    <h2><i class="fas fa-info-circle"></i> Thông tin</h2>
+                    <div><b>Ngày sinh:</b> <i>30/10/2003</i></div>
+                    <div><b>Điện thoại:</b> <i>0867431942</i></div>
+                    <div><b>Email:</b> <i>your.email@example.com</i></div>
+                </div>
     
-                <div class="education">
+                <div class="education mt-4">
                     <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Học vấn</h2>
                     <ul>
                         <li>Đại học công nghệ thành phố HCM</li>
@@ -69,9 +81,8 @@
                         <li>IELTS: 6.5</li>
                     </ul>
                 </div>
-                <br>
     
-                <div class="objective">
+                <div class="objective mt-4">
                     <h2 class="section-title"><i class="fas fa-bullseye"></i> Mục tiêu công việc</h2>
                     <h4><i class="fas fa-arrow-right"></i> Mục tiêu ngắn hạn</h4>
                     <ul>
@@ -86,11 +97,10 @@
                         <li>Phát triển sự nghiệp trong tương lai nhiều hơn nữa.</li>
                     </ul>
                 </div>
-                <br>
             </div>
     
             <div class="col-md-8">
-                <div class="expertise">
+                <div class="expertise mt-4">
                     <h2 class="section-title"><i class="fas fa-cogs"></i> Kỹ năng chuyên ngành</h2>
                     <ul>
                         <li>ASP.NET, Spring Boot, Laravel</li>
@@ -102,31 +112,39 @@
                 </div>
                 <br>
     
-                <div class="experience">
+                <div class="experience mt-4">
                     <h2 class="section-title"><i class="fas fa-briefcase"></i> Kinh nghiệm làm việc</h2>
                     <br>                        
                     <!-- Dự án 1: Trang web thương mại điện tử -->
                     <h3>Dự án 1: Trang web thương mại điện tử</h3>
-                    <div class="project">
+                    <div class="project mt-4">
                         <img src="" alt="Trang web thương mại điện tử" class="project-img">
                         <div class="project-details">
                             <p><strong>Vị trí:</strong> Frontend Developer</p>
                             <p><strong>Thời gian:</strong> Tháng 1, 2023 - Tháng 3, 2023</p>
                             <p><strong>Mô tả:</strong> Phát triển nền tảng thương mại điện tử sử dụng Java, SpringBoot và SQLServer. Tích hợp cổng thanh toán và tối ưu giao diện người dùng cho tính tương thích với di động.</p>
                         </div>
+                        <!-- Liên kết đến trang -->
+                        <a href="https://github.com/Dievis/BookStoreJavaSpringSecurity" target="_blank" title="Click vào đây để chuyển đến trang">
+                            <img src="images/Web thương mại điện tử.png" alt="E-Commercial" class="QR-code">
+                        </a>
                     </div>
-                    
+
                     <!-- Dự án 2: Phát triển game di động -->
                     <h3>Dự án 2: Phát triển game di động</h3>
-                    <div class="project">
+                    <div class="project mt-4">
                         <img src="" alt="Game di động" class="project-img">
                         <div class="project-details">
                             <p><strong>Vị trí:</strong> Game Developer</p>
                             <p><strong>Thời gian:</strong> Tháng 6, 2022 - Tháng 9, 2022</p>
                             <p><strong>Mô tả:</strong> Xây dựng một game kinh dị 3D sử dụng Unity. Thiết kế cơ chế gameplay, tài nguyên đồ họa và triển khai hệ thống tiến trình của người chơi.</p>
                         </div>
+                        <!-- Liên kết đến trang -->
+                        <a href="https://github.com/NHD2507/DACN" target="_blank" title="Click vào đây để chuyển đến trang">
+                            <img src="images/3DGameMobileQR.png" alt="Game Mobile" class="QR-code">
+                        </a>
                     </div>
-                    
+
                     <!-- Dự án 3: Phát triển game -->
                     <h3>Dự án 3: Phát triển game</h3>
                     <div class="project">
@@ -136,6 +154,10 @@
                             <p><strong>Thời gian:</strong> Tháng 6, 2022 - Tháng 9, 2022</p>
                             <p><strong>Mô tả:</strong> Xây dựng một game kinh dị 3D sử dụng Unity. Thiết kế cơ chế gameplay, tài nguyên đồ họa và triển khai hệ thống tiến trình của người chơi.</p>
                         </div>
+                        <!-- Liên kết đến trang -->
+                        <a href="https://github.com/NecRose01/DACNNEWMAP" target="_blank" title="Click vào đây để chuyển đến trang">
+                            <img src="images/Game 3D Pc.png" alt="Game PC" class="QR-code">
+                        </a>
                     </div>
                 </div>
                 <br>
