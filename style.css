@@ -62,3 +62,82 @@ h1 {
 .thongtin b {
     color: #2c3e50;
 }
+/* Thiết lập kiểu chung cho taskbar */
+.taskbar {
+    background: linear-gradient(135deg, #78a6c5, #f19ad1); /* Hiệu ứng gradient */
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Định dạng danh sách menu */
+.taskbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Định dạng từng mục trong menu */
+.taskbar li {
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Định dạng các liên kết */
+.taskbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Hiệu ứng hover */
+.taskbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Hiệu ứng gạch chân dưới khi hover */
+.taskbar li::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background: white;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Khi hover, hiệu ứng underline sẽ xuất hiện */
+.taskbar li:hover::after {
+    width: 80%;
+}
+
+/* Hiệu ứng responsive */
+@media (max-width: 768px) {
+    .taskbar {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .taskbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .taskbar li {
+        margin: 10px 0;
+    }
+}
+
