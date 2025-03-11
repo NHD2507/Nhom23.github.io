@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thành viên 2</title>
-    <link rel="stylesheet" href="style.css"> <!-- Liên kết tới file CSS -->
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trần Phát Đạt</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"> <!-- Liên kết tới file CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Thêm Font Awesome -->
+        <style>
+            .profile-img {
+                width: 150px; /* Kích thước ảnh */
+                height: 150px; /* Kích thước ảnh */
+                border-radius: 50%; /* Để tạo hình tròn */
+                object-fit: cover; /* Đảm bảo ảnh không bị mờ hoặc bị kéo giãn */
+                border: 4px solid #fff; /* Viền trắng quanh ảnh để tạo sự nổi bật */
+                margin-bottom: 10px; /* Khoảng cách dưới ảnh */
+                margin-top: 0px; /* Khoảng cách phía trên ảnh để nhích xuống một chút */
+            }
+            .divider {
+                border-right: 1px solid #ddd;
+            }
+    
+            .section-title {
+                display: flex;
+                align-items: center;
+            }
+    
+            .section-title i {
+                margin-right: 8px; /* Khoảng cách giữa icon và tiêu đề */
+            }
+        </style>
+    </head>
+    
 <body>
     <!-- Thanh Menu -->
     <div class="taskbar">
@@ -13,21 +39,112 @@
         <ul>
             
             <li><a href="nguyenhuudat.html">Nguyễn Hữu Đạt</a></li>
+            <li><a href="tranphatdat.html">Trần Phát Đạt</a></li>
             <li><a href="lethanhtung.html">Lê Thanh Tùng</a></li>
             <li><a href="nguyenbacuong.html">Nguyễn Bá Cường</a></li>
-            <li><a href="nguyenvanthieu.html">Nguyễn Văn Thiều</a></li>
+            
         </ul>
     </div>
 
     <!-- Thông tin thành viên -->
-    <div class="container">
-        <div class="profile-image">
-            <img src="images/image2.png" alt="Thành viên 2" />
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 text-center divider">
+                <img src="images/myavt.png" class="img-fluid rounded-circle mb-3 profile-img" alt="Trần Phát Đạt">
+                <h1>Trần Phát Đạt</h1>
+                <h5><i class="fas fa-info-circle"></i> Thông tin</h5>
+                <div><b>Ngày sinh:</b> <i>30/10/2003</i></div>
+                <div><b>Điện thoại:</b> <i>0867431942</i></div>
+                <div><b>Email:</b> <i>your.email@example.com</i></div>
+                <br>
+    
+                <div class="education">
+                    <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Học vấn</h2>
+                    <ul>
+                        <li>Đại học công nghệ thành phố HCM</li>
+                        <li>Niên khóa 2021 - 2025</li>
+                        <li>Chuyên ngành công nghệ phần mềm</li>
+                        <li>GPA: 3/4</li>
+                        <li>Chứng chỉ: B1, Giao tiếp và làm việc nhóm</li>
+                        <li>IELTS: 6.5</li>
+                    </ul>
+                </div>
+                <br>
+    
+                <div class="objective">
+                    <h2 class="section-title"><i class="fas fa-bullseye"></i> Mục tiêu công việc</h2>
+                    <h4><i class="fas fa-arrow-right"></i> Mục tiêu ngắn hạn</h4>
+                    <ul>
+                        <li>Học hỏi kinh nghiệm ở môi trường làm việc chuyên nghiệp, năng động.</li>
+                        <li>Mở rộng thêm các mối quan hệ xung quanh.</li>
+                    </ul>
+                
+                    <h4><i class="fas fa-arrow-right"></i> Mục tiêu dài hạn</h4>
+                    <ul>
+                        <li>Mong muốn trở thành nhân viên chính thức, đóng góp sức mình và mang lại giá trị cho công ty.</li>
+                        <li>Trở thành chuyên gia trong linh vực công nghệ, hiểu biết sâu sắc nhiều mảng khác nhau, kết hợp kiến thức tích lũy để phục vụ công việc.</li>
+                        <li>Phát triển sự nghiệp trong tương lai nhiều hơn nữa.</li>
+                    </ul>
+                </div>
+                <br>
+            </div>
+    
+            <div class="col-md-8">
+                <div class="expertise">
+                    <h2 class="section-title"><i class="fas fa-cogs"></i> Kỹ năng chuyên ngành</h2>
+                    <ul>
+                        <li>ASP.NET, Spring Boot, Laravel</li>
+                        <li>HTML, CSS, Bootstrap</li>
+                        <li>Unity</li>
+                        <li>Java, PHP, C#, C/C++, JS</li>
+                        <li>Có kiến thức cơ bản về Git</li>
+                    </ul>
+                </div>
+                <br>
+    
+                <div class="experience">
+                    <h2 class="section-title"><i class="fas fa-briefcase"></i> Kinh nghiệm làm việc</h2>
+                    <br>                        
+                    <!-- Dự án 1: Trang web thương mại điện tử -->
+                    <h3>Dự án 1: Trang web thương mại điện tử</h3>
+                    <div class="project">
+                        <img src="" alt="Trang web thương mại điện tử" class="project-img">
+                        <div class="project-details">
+                            <p><strong>Vị trí:</strong> Frontend Developer</p>
+                            <p><strong>Thời gian:</strong> Tháng 1, 2023 - Tháng 3, 2023</p>
+                            <p><strong>Mô tả:</strong> Phát triển nền tảng thương mại điện tử sử dụng Java, SpringBoot và SQLServer. Tích hợp cổng thanh toán và tối ưu giao diện người dùng cho tính tương thích với di động.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Dự án 2: Phát triển game di động -->
+                    <h3>Dự án 2: Phát triển game di động</h3>
+                    <div class="project">
+                        <img src="" alt="Game di động" class="project-img">
+                        <div class="project-details">
+                            <p><strong>Vị trí:</strong> Game Developer</p>
+                            <p><strong>Thời gian:</strong> Tháng 6, 2022 - Tháng 9, 2022</p>
+                            <p><strong>Mô tả:</strong> Xây dựng một game kinh dị 3D sử dụng Unity. Thiết kế cơ chế gameplay, tài nguyên đồ họa và triển khai hệ thống tiến trình của người chơi.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Dự án 3: Phát triển game -->
+                    <h3>Dự án 3: Phát triển game</h3>
+                    <div class="project">
+                        <img src="" alt="Game PC" class="project-img">
+                        <div class="project-details">
+                            <p><strong>Vị trí:</strong> Game Developer</p>
+                            <p><strong>Thời gian:</strong> Tháng 6, 2022 - Tháng 9, 2022</p>
+                            <p><strong>Mô tả:</strong> Xây dựng một game kinh dị 3D sử dụng Unity. Thiết kế cơ chế gameplay, tài nguyên đồ họa và triển khai hệ thống tiến trình của người chơi.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                
+            </div>
         </div>
-        <h1>Thành viên 2</h1>
-        <div class="thongtin"><b>Tên:</b> <i>Thành viên 2</i></div>
-        <div class="thongtin"><b>Ngày sinh:</b> <i>1995</i></div>
-        <div class="thongtin"><b>Điện thoại:</b> <i>0375520739</i></div>
     </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

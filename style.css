@@ -124,6 +124,81 @@ h1 {
     width: 80%;
 }
 
+/*CSS của TPD*/
+
+.education {
+    text-align: left; /* Căn lề trái cho tất cả nội dung trong education */
+    padding-left: 20px; /* Thêm khoảng cách bên trái cho đẹp */
+}
+
+.education h2, .education h4 {
+    margin-left: 0; /* Đảm bảo tiêu đề không bị lệch */
+}
+
+.education ul {
+    padding-left: 20px; /* Đảm bảo các mục trong danh sách có khoảng cách bên trái */
+}
+
+.education li {
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các mục trong danh sách */
+}
+
+.objective {
+    text-align: left; /* Căn lề trái cho tất cả nội dung trong objective */
+    padding-left: 20px; /* Thêm khoảng cách bên trái cho đẹp */
+}
+
+.objective h2, .objective h4 {
+    margin-left: 0; /* Đảm bảo tiêu đề không bị lệch */
+}
+
+.objective ul {
+    padding-left: 20px; /* Đảm bảo các mục trong danh sách có khoảng cách bên trái */
+}
+
+.objective li {
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các mục trong danh sách */
+}
+
+.expertise {
+    text-align: left; /* Căn lề trái cho tất cả nội dung trong expertise */
+    padding-left: 20px; /* Thêm khoảng cách bên trái cho đẹp */
+}
+
+.expertise h2, .expertise h4 {
+    margin-left: 0; /* Đảm bảo tiêu đề không bị lệch */
+}
+
+.expertise ul {
+    padding-left: 20px; /* Đảm bảo các mục trong danh sách có khoảng cách bên trái */
+}
+
+.expertise li {
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các mục trong danh sách */
+}
+
+.experience {
+    text-align: left; /* Căn lề trái cho tất cả nội dung trong experience */
+    padding-left: 20px; /* Thêm khoảng cách bên trái cho đẹp */
+}
+
+.experience h2, .experience h4 {
+    margin-left: 0; /* Đảm bảo tiêu đề không bị lệch */
+}
+
+.experience ul {
+    padding-left: 20px; /* Đảm bảo các mục trong danh sách có khoảng cách bên trái */
+}
+
+.experience li {
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các mục trong danh sách */
+}
+
+
+
+
+
+
 /* Hiệu ứng responsive */
 @media (max-width: 768px) {
     .taskbar {
