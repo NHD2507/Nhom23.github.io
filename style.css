@@ -1,3 +1,229 @@
+/* Cấu trúc chung */
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Thanh taskbar */
+.taskbar {
+    background-color: #2c3e50;
+    padding: 10px 0;
+}
+
+.taskbar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.taskbar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.taskbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.taskbar a:hover {
+    background-color: #16a085;
+}
+
+/* Các profile */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2c3e50;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+.thongtin {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.thongtin b {
+    color: #2c3e50;
+}
+/* Thiết lập kiểu chung cho taskbar */
+.taskbar {
+    background: linear-gradient(135deg, #78a6c5, #f19ad1); /* Hiệu ứng gradient */
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Định dạng danh sách menu */
+.taskbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Định dạng từng mục trong menu */
+.taskbar li {
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Định dạng các liên kết */
+.taskbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Hiệu ứng hover */
+.taskbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Hiệu ứng gạch chân dưới khi hover */
+.taskbar li::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background: white;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Khi hover, hiệu ứng underline sẽ xuất hiện */
+.taskbar li:hover::after {
+    width: 80%;
+}
+
+/*CSS của TPD*/
+
+.education {
+    text-align: left; /* Căn lề trái cho tất cả nội dung trong education */
+    padding-left: 20px; /* Thêm khoảng cách bên trái cho đẹp */
+}
+
+.education h2, .education h4 {
+    margin-left: 0; /* Đảm bảo tiêu đề không bị lệch */
+}
+
+.education ul {
+    padding-left: 20px; /* Đảm bảo các mục trong danh sách có khoảng cách bên trái */
+}
+
+.education li {
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các mục trong danh sách */
+}
+
+.objective {
+    text-align: left; /* Căn lề trái cho tất cả nội dung trong objective */
+    padding-left: 20px; /* Thêm khoảng cách bên trái cho đẹp */
+}
+
+.objective h2, .objective h4 {
+    margin-left: 0; /* Đảm bảo tiêu đề không bị lệch */
+}
+
+.objective ul {
+    padding-left: 20px; /* Đảm bảo các mục trong danh sách có khoảng cách bên trái */
+}
+
+.objective li {
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các mục trong danh sách */
+}
+
+.expertise {
+    text-align: left; /* Căn lề trái cho tất cả nội dung trong expertise */
+    padding-left: 20px; /* Thêm khoảng cách bên trái cho đẹp */
+}
+
+.expertise h2, .expertise h4 {
+    margin-left: 0; /* Đảm bảo tiêu đề không bị lệch */
+}
+
+.expertise ul {
+    padding-left: 20px; /* Đảm bảo các mục trong danh sách có khoảng cách bên trái */
+}
+
+.expertise li {
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các mục trong danh sách */
+}
+
+.experience {
+    text-align: left; /* Căn lề trái cho tất cả nội dung trong experience */
+    padding-left: 20px; /* Thêm khoảng cách bên trái cho đẹp */
+}
+
+.experience h2, .experience h4 {
+    margin-left: 0; /* Đảm bảo tiêu đề không bị lệch */
+}
+
+.experience ul {
+    padding-left: 20px; /* Đảm bảo các mục trong danh sách có khoảng cách bên trái */
+}
+
+.experience li {
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các mục trong danh sách */
+}
+
+.information {
+    text-align: left; /* Căn lề trái cho tất cả nội dung trong information */
+    padding-left: 20px; /* Thêm khoảng cách bên trái cho đẹp */
+}
+
+.information h2, .information h4 {
+    margin-left: 0; /* Đảm bảo tiêu đề không bị lệch */
+}
+
+
+
+
+/* Hiệu ứng responsive */
+@media (max-width: 768px) {
+    .taskbar {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .taskbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .taskbar li {
+        margin: 10px 0;
+    }
+}
+
+=======
 /* Đảm bảo toàn bộ body được căn giữa */
 body {
     font-family: Arial, sans-serif;

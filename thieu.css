@@ -1,0 +1,171 @@
+/* thieu.css */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Chia thành 2 cột: 1 phần cho cột trái, 2 phần cho cột phải */
+    gap: 20px; /* Khoảng cách giữa hai cột */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+    background-color: #2c3e50; /* Màu nền tối */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.right-column {
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff; /* Change background color to white */
+    color: #2c3e50; /* Adjust text color for readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #2c3e50; /* Change text color to match the rest of the text */
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #2c3e50; /* Change text color to match the rest of the text */
+}
+
+.profile-img {
+    width: 150px; /* Kích thước hình ảnh */
+    height: 150px;
+    border-radius: 50%; /* Làm tròn hình ảnh */
+    border: 3px solid #2c3e50; /* Adjust border color to match the new theme */
+    margin-bottom: 15px;
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+
+
+h2 {
+    font-size: 1.8em;
+    color: #2c3e50; /* Màu tiêu đề phù hợp với màu nền */
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.left-column h2 {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #2c3e50; /* Màu chữ đậm phù hợp */
+}
+
+.left-column strong {
+    color: #fff;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 4px solid #2c3e50;
+    margin-bottom: 10px;
+}
+
+.left-column section ul li {
+    background-color: #34495e; /* Màu nền tối hơn cho cột trái */
+    border-left: 4px solid #fff;
+}
+
+section ul li p {
+    margin: 5px 0;
+    color: #555; /* Màu chữ nhẹ hơn cho nội dung */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Chuyển thành 1 cột trên màn hình nhỏ */
+    }
+
+    .left-column {
+        border-radius: 0;
+    }
+
+    .profile-img {
+        width: 120px; /* Giảm kích thước hình ảnh trên mobile */
+        height: 120px;
+    }
+}
+
+/* Thanh taskbar */
+.taskbar {
+    background-color: #2c3e50;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.taskbar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.taskbar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.taskbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.taskbar a:hover {
+    background-color: #16a085; /* Màu nền khi hover */
+}
+
+/* Phần container chung */
+.container h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container p {
+    text-align: center;
+    color: #555;
+}
